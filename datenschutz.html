@@ -38,6 +38,13 @@
   </ul>
   <p>Die Nutzung von Informationen aus Google-APIs hält sich an die <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung („Limited Use“).</p>
 
+  <h2>3a. Google Drive (nur lesend)</h2>
+  <ul>
+    <li><b>Zugriff:</b> Der Bereich <code>https://www.googleapis.com/auth/drive.readonly</code> wird nur angefragt, wenn der Nutzer in JARVIS „Google Drive verbinden“ wählt.</li>
+    <li><b>Zweck:</b> JARVIS liest ausschließlich den vom Nutzer gewählten Ordner (Standard: „Goodnotes“), um dessen Lernunterlagen lokal zu durchsuchen und zusammenzufassen. JARVIS ändert, erstellt oder löscht nichts im Drive.</li>
+    <li><b>Speicherung:</b> Die Dateien werden lokal auf dem PC des Nutzers zwischengespeichert und indexiert. Sie werden an niemanden weitergegeben, nicht verkauft und nicht zum Training von KI-Modellen verwendet. Nur wenn der Nutzer eine Frage zu einer Unterlage stellt, geht der dafür nötige Ausschnitt an Google Gemini.</li>
+  </ul>
+
   <h2>4. Weitere Dienste, die der Nutzer selbst einrichtet</h2>
   <ul>
     <li><b>Google Gemini API:</b> Chat- und Spracheingaben gehen mit dem eigenen API-Schlüssel des Nutzers an Google, um Antworten zu erzeugen. Es gelten die Bedingungen von Google.</li>
